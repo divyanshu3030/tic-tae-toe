@@ -1,0 +1,74 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ff8c00, #ff0080);
+    color: #fff;
+    text-align: center;
+}
+
+/* Container for centering content */
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Title styling */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Subtitle styling */
+.subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #ffdd57;
+    animation: fadeIn 2s 0.5s ease-in-out;
+}
+
+/* Button styling */
+#playButton {
+    padding: 15px 40px;
+    background: #ffdd57;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#playButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
